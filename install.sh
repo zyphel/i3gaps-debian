@@ -10,8 +10,8 @@ sudo apt install -y xorg
 sudo apt install -y python3-pip 
 
 # Microcode for Intel/AMD 
-# sudo apt install -y amd64-microcode
-sudo apt install -y intel-microcode 
+sudo apt install -y amd64-microcode
+# sudo apt install -y intel-microcode 
 
 # Network Manager
 sudo apt install -y network-manager-gnome
@@ -20,7 +20,7 @@ sudo apt install -y network-manager-gnome
 sudo apt install -y lxappearance 
 
 # File Manager (eg. pcmanfm,krusader)
-sudo apt install -y thunar xfce4-settings ranger
+sudo apt install -y pcmanfm xfce4-settings lf
 
 # Network File Tools/System Events
 sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends
@@ -29,13 +29,13 @@ sudo systemctl enable avahi-daemon
 sudo systemctl enable acpid
 
 # Terminal (eg. terminator,kitty,xfce4-terminal)
-sudo apt install -y kitty
+sudo apt install -y zsh
 
 # Sound packages
 sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa
 
 # Neofetch/HTOP
-sudo apt install -y neofetch htop
+sudo apt install -y neofetch htop btop
 
 # EXA installation
 # replace ls command in .bashrc file with line below
@@ -44,9 +44,9 @@ sudo apt install -y exa
 
 # Printing and bluetooth (if needed)
 sudo apt install -y cups
-sudo apt install -y bluez blueman
+# sudo apt install -y bluez blueman
 
-sudo systemctl enable bluetooth
+# sudo systemctl enable bluetooth
 sudo systemctl enable cups
 
 # Browser Installation (eg. chromium)
@@ -55,8 +55,8 @@ sudo apt install -y firefox-esr
 # Desktop background browser/handler 
 # feh --bg-fill /path/to/directory 
 # example if you want to use in autostart.sh for i3-gaps
-# sudo apt install -y nitrogen 
-sudo apt install -y feh
+sudo apt install -y nitrogen 
+# sudo apt install -y feh
 
 # Required packages for i3-gaps installation
 sudo apt install -y meson dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-shape0 libxcb-shape0-dev i3status
@@ -66,7 +66,7 @@ sudo apt install -y dmenu sxhkd numlockx rofi dunst libnotify-bin picom unzip ge
 
 # Command line text editor -- nano preinstalled  -- I like micro but vim is great
 # sudo apt install -y micro
-sudo apt install -y vim
+sudo apt install -y neovim
 
 # Install fonts
 sudo apt install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus fonts-cascadia-code
